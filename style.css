@@ -30,6 +30,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
    font-size: 72px;
+   position: relative;
+   z-index: 2;
 }
 h2 {
    font-size: 60px;
@@ -45,4 +47,35 @@ h3 {
    margin: 0 auto;
    padding-top: 100px;
    padding-bottom: 100px;
+}
+.section-header {
+
+}
+.section-background::before {
+   content: "";
+   position: absolute;
+   background-image: url(background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.1;
+   width: 100%;
+   height: 100%;
+}
+header div img {
+   height: 525px;
+   position: absolute;
+   top: 55px;
+   right: -270px;
+}
+.text {
+   position: relative;
+   margin-top: 185px;
+   columns: auto 2;
+   column-gap: 30px;
+   z-index: 2;
+}
+.btn {
+   display: block;
+   padding: 24px 12px;
+   font-weight: bold;
 }
