@@ -23,6 +23,10 @@
    --brown: #b09a81;
    --blue: #1085c5;
 }
+body {
+   width: 1440px;
+   box-sizing: border-box;
+}
 h1,h2,h3,h4,h5,h6 {
    font-family: "Neucha";
    color: #2A2626;
@@ -49,7 +53,9 @@ h3 {
    padding-bottom: 100px;
 }
 .section-header {
-
+ position: absolute;
+ left: 50%;
+ margin-left: -700px;
 }
 .section-background::before {
    content: "";
